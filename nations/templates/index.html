@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Nations</h1>
+    <div class="row">
+        {% for nation in nations %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ nation.image_url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ nation.country }}</h5>
+                    <a href="#" class="btn btn-primary">Leagues</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
