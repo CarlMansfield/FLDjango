@@ -8,6 +8,3 @@ def index(request):
     return render(request, 'index.html',
                   {'nations' : nations})
 
-
-def leagues(request):
-    return HttpResponse('leagues')
